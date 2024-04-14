@@ -110,7 +110,7 @@ a:visited {
     paint-order: stroke fill;
 }
 
-a:hover, .work-container h4:hover {
+a:hover, a:active, .work-container h4:hover, .work-container h4:active {
     color: #3939AA;
     filter: drop-shadow(0 0 5px #FF0C00);
     cursor: pointer;
@@ -314,11 +314,11 @@ a #ig-icon {
     pointer-events: auto;
 }
 
-.hero-left:hover, .hero-right:hover {
+.hero-left:hover, .hero-left:active, .hero-right:hover, .hero-right:active {
     background-color: #0000FF;
 }
 
-.hero-text-container a:hover {
+.hero-text-container a:hover, .hero-text-container a:active {
     color: #0000ff;
     filter: none;
 }
@@ -368,7 +368,7 @@ a #ig-icon {
     margin: 0;
 }
 
-.astro-q button:hover {
+.astro-q button:hover, .astro-q button:active {
     color: #FF0C00;
     border-bottom: none;
     cursor: pointer;
@@ -416,18 +416,18 @@ a #ig-icon {
     width: 80%;
 }
 
-.hp-project:hover {
+.hp-project:hover, .hp-project:active {
     color: #0000FF;
     background-color: #0000FF;
     filter: none;
     cursor: pointer;    
 }
 
-.hp-project:hover h2 {
+.hp-project:hover h2, .hp-project:active h2 {
     -webkit-text-stroke: 3px #00FF60;
 }
 
-.hp-project:hover img {
+.hp-project:hover img, .hp-project:active img {
     outline: 1px solid #00FF60;
 }
 
@@ -453,7 +453,7 @@ a #ig-icon {
     }
 
     .hp-project img {
-        width: fit-content;
+        /* width: fit-content; */
         max-height: 80vh;
     }
     
@@ -504,7 +504,7 @@ footer a:visited {
     color: #00FF60;
 }
 
-footer a:hover {
+footer a:hover, footer a:active {
     color: #FF0C00;
     filter: none;
 }
