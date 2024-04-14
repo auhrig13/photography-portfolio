@@ -4,34 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>andrew uhrig--homepage</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jma1nsl.css">
+    <title>andrew uhrig</title>
     <script src="app.js" defer></script>
 </head>
 <body>
     <nav>
+        <!-- logo -->
         <div class="nav-left">
-            <img src="https://images.squarespace-cdn.com/content/v1/5f3297cd1a328c22149fdf92/1597259088499-7EML1TMIM5J7HNYDHLMB/andrewuhrig_logo_2020-WIP-NEW.png?format=1500w" alt="andrew uhrig smiley face">
+            <a href="/index.html"><img src="images/head-foot/smiley-webcrop.png" alt="andrew uhrig smiley face"></a>
         </div>
-        <span class="hamburger-menu"></span>
-        <aside class="mobile-menu">
-            <a href="#">work</a>
-            <a href="#">about</a>
-            <a href="#">contact</a>
-            <img src="https://pluspng.com/img-png/instagram-icon-png-instagram-icon-1600.png" alt="@uhr.ig on Instagram">
+        <!-- mobile hamburger menu -->
+        <div class="mobile-nav">
+            <div class="hamburger">
+                <span class="bar-top"></span>
+                <span class="bar-bottom"></span>
+            </div>
+        </div>
+         <!-- mobile dropdown menu -->
+         <aside class="mobile-menu">
+            <h4 id="work-mb-button">work</h4>
+            <div class="work-mobile">
+                <a href="/personal.html"><h5>personal</h5></a>
+                <a href="/professional.html"><h5>professional</h5></a>
+            </div>
+            <a href="/about.html"><h4>about</h4></a>
+            <a href="/contact.html"><h4>contact</h4></a>
+            <a href="https://www.instagram.com/uhr.ig/" target="_blank" rel="noopener noreferrer">
+                <img id="ig-icon" src="images/head-foot/Instagram_Glyph_greenblue-01-01.png" alt="@uhr.ig on Instagram">
+                
+            </a>
         </aside>
-        <div class="nav-right">
-            <a href="#">work</a>
-            <a href="#">about</a>
-            <a href="#">contact</a>
-            <img src="https://pluspng.com/img-png/instagram-icon-png-instagram-icon-1600.png" alt="@uhr.ig on Instagram">
+        <!-- desktop menu -->
+        <div class="desktop-menu">
+            <div class="work-container">
+                <h4 id="work-dt-button">work</h4>
+                <div class="work-desktop">
+                    <a href="/personal.html"><h5>personal</h5></a>
+                    <a href="/professional.html"><h5>professional</h5></a>
+                </div>
+            </div>
+            <a href="/about.html"><h4>about</h4></a>
+            <a href="/contact.html"><h4>contact</h4></a>
+            <a href="https://www.instagram.com/uhr.ig/" target="_blank" rel="noopener noreferrer">
+                <img id="ig-icon" src="images/head-foot/Instagram_Glyph_greenblue-01-01.png" alt="@uhr.ig on Instagram">
+            </a>
         </div>
-
     </nav>
-
-    <section>
-
+<!-- hero -->
+    <section class="hp-hero-section">
+        <video autoplay muted loop id="hp-hero-video">
+            <source src="images/homepage/iforgotmypower-loop_2.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text-container">
+            <div class="hero-left">
+                <a href="/personal.html"><h5>personal</h5></a>
+            </div>
+            <div class="hero-right">
+                <a href="/professional.html"><h5>professional</h5></a>
+            </div>
+        </div>
     </section>
-
-    
+    <section class="about-section">
+        <div class="about-text">
+            <h1>hi, my name is andrew.</h1>
+            <p>i am an out-of-practice photographer and graphic designer based in brooklyn, new york.</p>
+            <p>my big three are:</p>
+            <ul>
+                <li>☉ cancer</li>
+                <li>￪ scorpio</li>
+                <li>☾ pisces</li>
+            </ul>
+            <div class="astro-q">
+                <p>do you know what that means?</p>
+                <div class="astro-buttons">
+                    <button id="yes">yes</button>
+                    <button id="no">no</button>
+                </div>
+                <p id="astro-a"></p>
+            </div>
+            <p>here are some photos i'd like to share with you.</p>
+        </div>
+    </section>
+    <section class="hp-project-section">
+        <a class="hp-project">
+            <div class="hp-project-spacer">
+                <img src="/images/personal/_B0A7939.jpg" alt="colorized image of andrew laying in grass">
+                <h2>personal work ➫</h2>
+            </div>
+        </a>
+        <a class="hp-project">
+            <div class="hp-project-spacer">
+                <img src="/images/professional/RADIANCE-5-min.jpg" alt="person in red jacket on red background">
+                <h2>professional work ➫</h2>
+            </div>
+        </a>
+    </section>
+    <footer>
+        <section class="footer-grid">
+            <div class="foot-col">
+                <a href="/personal.html">/personal</a>
+                <a href="/professional.html">/professional</a>
+                <a href="/about.html">/about</a>
+                <a href="/contact.html">/contact</a>
+            </div>
+            <div>
+                <p>thanks for visiting.</p>
+                <p>warmly,</p>
+                <img src="/images/head-foot/au.png" alt="au">
+            </div>
+        </section>
+        <section class="copyright">
+            <p>© andrew uhrig. All rights reserved.</p>
+        </section>
+    </footer>
 </body>
 </html>
