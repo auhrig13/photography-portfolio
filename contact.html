@@ -6,9 +6,119 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/jma1nsl.css">
     <title>au/contact</title>
+    <link rel="icon" type="image/x-icon" href="images/head-foot/smiley-webcrop-min.png">
     <script src="app.js" defer></script>
+    <script src="contact.js" defer></script>
 </head>
 <body>
-    <h1>contact</h1>
+
+   </div>
+   
+    <!-- NAV -->
+
+    <nav>
+
+        <!-- LOGO -->
+
+        <div class="nav-left">
+            <a href="index.html"><img src="images/head-foot/smiley-webcrop-min.png" alt="andrew uhrig smiley face"></a>
+        </div>
+
+        <!-- MOBILE HAMBURGER MENU -->
+
+        <div class="mobile-nav">
+            <div class="hamburger">
+                <span class="bar-top"></span>
+                <span class="bar-bottom"></span>
+            </div>
+        </div>
+
+         <!-- MOBILE DROPDOWN MENU -->
+
+         <aside class="mobile-menu">
+            <h4 class="work-button" id="work-mb-button">work</h4>
+            <div class="work-mobile">
+                <a href="personal.html"><h5>personal</h5></a>
+                <a href="professional.html"><h5>professional</h5></a>
+            </div>
+            <a href="about.html"><h4>about</h4></a>
+            <a href="contact.html"><h4>contact</h4></a>
+            <a href="https://www.instagram.com/uhr.ig/" target="_blank" rel="noopener noreferrer">
+                <img id="ig-icon" src="images/head-foot/Instagram_Glyph_greenblue-01-01.png" alt="@uhr.ig on Instagram">
+                
+            </a>
+        </aside>
+
+        <!-- DESKTOP MENU -->
+        
+        <div class="desktop-menu">
+            <div class="work-container">
+                <h4 class="work-button" id="work-dt-button">work</h4>
+                <div class="work-desktop">
+                    <a href="personal.html"><h5>personal</h5></a>
+                    <a href="professional.html"><h5>professional</h5></a>
+                </div>
+            </div>
+            <a href="about.html"><h4>about</h4></a>
+            <a href="contact.html"><h4>contact</h4></a>
+            <a href="https://www.instagram.com/uhr.ig/" target="_blank" rel="noopener noreferrer">
+                <img id="ig-icon" src="images/head-foot/Instagram_Glyph_greenblue-01-01.png" alt="@uhr.ig on Instagram">
+            </a>
+        </div>
+    </nav>
+
+<!-- CONTACT -->
+
+    <section class="contact-container">
+        <h1>ask me about my work,</h1>
+        <h5>or talk to me about astrology and crystals.</h5>
+        <form id="contact-form">
+            <fieldset>
+                <label for="first-name">name</label>
+                <input type="text" name="name[first]" placeholder="first name" id="first-name">
+                <input type="text" name="name[last]" placeholder="last name" id="last-name">
+            </fieldset>
+            <fieldset>
+                <label for="phone-area-code">phone number</label>
+                <div class="phone-number-fields">
+                    <input type="tel" name="phone[area_code]" class="phone" maxlength="3" placeholder="xxx" id="phone-area-code"> &mdash;
+                    <input type="tel" name="phone[prefix]" class="phone" maxlength="3" placeholder="xxx" id="phone-prefix"> &mdash;
+                    <input type="tel" name="phone[line_number]" class="phone" maxlength="4" placeholder="xxxx" id="phone-line-number">
+                </div>
+            </fieldset>
+            <fieldset>
+                <label for="message">message</label>
+                <textarea name="message" id="message"></textarea>
+            </fieldset>
+            <div id="error-name"></div>
+            <div id="error-phone"></div>
+            <div id="error-message"></div>
+            <div id="form-success"></div>
+            <fieldset>
+                <input type="submit" value="Submit" id="submit">
+              </fieldset>
+        </form>
+    </section>
+
+<!-- FOOTER -->
+
+    <footer>
+        <section class="footer-flex">
+            <div>
+                <p>thanks for visiting.</p>
+                <p>warmly,</p>
+                <img src="images/head-foot/au.png" alt="au">
+            </div>
+            <div class="foot-col">
+                <a id="link-3" href="personal.html">/personal</a>
+                <a id="link-3" href="professional.html">/professional</a>
+                <a id="link-3" href="about.html">/about</a>
+                <a id="link-3" href="contact.html">/contact</a>
+            </div>
+        </section>
+        <section class="copyright">
+            <p>© andrew uhrig. All rights reserved.</p>
+        </section>
+    </footer>
 </body>
 </html>

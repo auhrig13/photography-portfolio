@@ -8,23 +8,33 @@
     <title>andrew uhrig</title>
     <link rel="icon" type="image/x-icon" href="images/head-foot/smiley-webcrop-min.png">
     <script src="app.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
+
+    <!-- NAV -->
+
     <nav>
-        <!-- logo -->
+
+        <!-- LOGO -->
+
         <div class="nav-left">
             <a href="index.html"><img src="images/head-foot/smiley-webcrop-min.png" alt="andrew uhrig smiley face"></a>
         </div>
-        <!-- mobile hamburger menu -->
+
+        <!-- MOBILE HAMBURGER MENU -->
+
         <div class="mobile-nav">
             <div class="hamburger">
                 <span class="bar-top"></span>
                 <span class="bar-bottom"></span>
             </div>
         </div>
-         <!-- mobile dropdown menu -->
+
+         <!-- MOBILE DROPDOWN MENU -->
+
          <aside class="mobile-menu">
-            <h4 id="work-mb-button">work</h4>
+            <h4 class="work-button" id="work-mb-button">work</h4>
             <div class="work-mobile">
                 <a href="personal.html"><h5>personal</h5></a>
                 <a href="professional.html"><h5>professional</h5></a>
@@ -36,10 +46,12 @@
                 
             </a>
         </aside>
-        <!-- desktop menu -->
+
+        <!-- DESKTOP MENU -->
+        
         <div class="desktop-menu">
             <div class="work-container">
-                <h4 id="work-dt-button">work</h4>
+                <h4 class="work-button" id="work-dt-button">work</h4>
                 <div class="work-desktop">
                     <a href="personal.html"><h5>personal</h5></a>
                     <a href="professional.html"><h5>professional</h5></a>
@@ -52,22 +64,27 @@
             </a>
         </div>
     </nav>
-<!-- hero -->
+
+<!-- HERO -->
+
     <section class="hp-hero-section">
         <video preload autoplay loop muted playsinline id="hp-hero-video">
             <source src="images/homepage/iforgotmypower-loop_2.mp4" type="video/mp4">
         </video>
         <div class="hero-text-container">
             <div class="hero-left">
-                <a href="personal.html"><h5>personal</h5></a>
+                <a id="link-1" href="personal.html">personal</a>
             </div>
             <div class="hero-right">
-                <a href="professional.html"><h5>professional</h5></a>
+                <a id="link-1" href="professional.html">professional</a>
             </div>
         </div>
     </section>
-    <section class="about-section">
-        <div class="about-text">
+
+<!-- ABOUT -->
+
+    <section class="hp-about-section">
+        <div class="hp-about-text">
             <h1>hi, my name is andrew.</h1>
             <p>i am an out-of-practice photographer and graphic designer based in brooklyn, new york.</p>
             <p>my big three are:</p>
@@ -87,32 +104,38 @@
             <p>here are some photos i'd like to share with you.</p>
         </div>
     </section>
+
+<!-- PROJECTS -->
+
     <section class="hp-project-section">
-        <a href="personal.html" class="hp-project">
+        <a id="link-2" href="personal.html">
             <div class="hp-project-spacer">
                 <img src="images/personal/-B0A7939-min.jpg" alt="colorized image of andrew laying in grass">
-                <h2>personal work ➫</h2>
+                <h2 id="link-2-text">personal work ➫</h2>
             </div>
         </a>
-        <a href="professional.html" class="hp-project">
+        <a id="link-2" href="professional.html">
             <div class="hp-project-spacer">
                 <img src="images/professional/RADIANCE-5-min.jpg" alt="person in red jacket on red background">
-                <h2>professional work ➫</h2>
+                <h2 id="link-2-text">professional work ➫</h2>
             </div>
         </a>
     </section>
+
+<!-- FOOTER -->
+
     <footer>
-        <section class="footer-grid">
-            <div class="foot-col">
-                <a href="personal.html">/personal</a>
-                <a href="professional.html">/professional</a>
-                <a href="about.html">/about</a>
-                <a href="contact.html">/contact</a>
-            </div>
+        <section class="footer-flex">
             <div>
                 <p>thanks for visiting.</p>
                 <p>warmly,</p>
                 <img src="images/head-foot/au.png" alt="au">
+            </div>
+            <div class="foot-col">
+                <a id="link-3" href="personal.html">/personal</a>
+                <a id="link-3" href="professional.html">/professional</a>
+                <a id="link-3" href="about.html">/about</a>
+                <a id="link-3" href="contact.html">/contact</a>
             </div>
         </section>
         <section class="copyright">
