@@ -48,25 +48,21 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     color: black;
-    -webkit-text-stroke: 5px #00FF60;
+    -webkit-text-stroke: 4px #00FF60;
 }
 
 h2 {
-    font-size: 40px;
-}
-
-h3 {
     font-size: 30px;
 }
 
-h4 {
+h3 {
     font-size: 20px;
     transition: ease .3s;
 }
 
-h5 {
+h4 {
     font-size: 16px;
     font-variation-settings: "slnt" 0, "wdth" 200, "wght" 400;
 }
@@ -89,6 +85,12 @@ ul {
     h1 {
         font-size: 100px;
         -webkit-text-stroke: 7px #00FF60;
+    }
+}
+
+@media (min-width: 1080px) {
+    h2 {
+        font-size: 50px;
     }
 }
 
@@ -141,6 +143,7 @@ nav a:hover, a:active, .work-button:hover, .work-button:active {
 
 #link-2 {
     color: #0000ff;
+    transition: ease .3s;
 }
 
 #link-2:hover #link-2-text, #link-2:active #link-2-text {
@@ -153,6 +156,7 @@ nav a:hover, a:active, .work-button:hover, .work-button:active {
 
 #link-3 {
     color: #00FF60;
+    transition: ease .3s;
 }
 
 #link-3:visited {
@@ -168,6 +172,7 @@ nav a:hover, a:active, .work-button:hover, .work-button:active {
     color: #00FF60;
     padding-bottom: ;
     border-bottom: 1px solid #00FF60;
+    transition: ease .3s;
 }
 
 #link-4:visited {
@@ -206,6 +211,7 @@ nav a:hover, a:active, .work-button:hover, .work-button:active {
     border-bottom: 1px solid #00FF60;
     padding: 0;
     margin: 0;
+    transition: ease .3s;
 }
 
 .astro-q button:hover, .astro-q button:active {
@@ -264,7 +270,7 @@ a #ig-icon {
     border-right: 1px solid #00FF60;
     border-top: none;
     right: -100%;
-    transition: 0.3s ease-in-out;
+    transition: ease .3s;
 }
 
 .mobile-menu-visible {
@@ -283,7 +289,7 @@ a #ig-icon {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    transition: all 0.3s ease-in-out;
+    transition: ease .3s;
     background-color: #0000ff;
     border: 1px solid #00FF60;
     border-radius: 10px;
@@ -319,7 +325,7 @@ a #ig-icon {
     position: relative;
     right: 0;
     padding-bottom: 15px;
-    transition: 0.3s ease-in-out;
+    transition: ease .3s;
 }
 
 .work-mobile-active {
@@ -360,7 +366,7 @@ a #ig-icon {
         top: 40px;
         right: -10px;
         border-right: 1px solid #00FF60;
-        transition: 0.3s ease-in-out;
+        transition: ease .3s;
     }
 
     .work-desktop-active {
@@ -428,6 +434,8 @@ footer {
     top: 0;
     z-index: -1;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
     margin-left: 50vw;
     transform: translate(-50%);
     overflow-x: hidden;
@@ -449,7 +457,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.3s ease-in-out;
+    transition: ease .3s;
 }
 
 .hero-right a, .hero-left a {
@@ -458,7 +466,6 @@ footer {
 
 .hero-left:hover, .hero-left:active, .hero-right:hover, .hero-right:active {
     background-color: black;
-
 }
 
 /* HOMEPAGE--ABOUT */
@@ -501,22 +508,28 @@ footer {
 }
 
 #link-2 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 20px;
     overflow: hidden;
     max-height: 100vh;
 }
 
+#link-2:last-child img, #link-2:last-child #link-2-text {
+    align-self: flex-end;
+    text-align: right;
+}
+
 #link-2 img {
     max-width: 100%;
     max-height: 70vh;
+    object-fit: contain;
     transition: ease .3s;
 }
 
 #link-2 #link-2-text {
     -webkit-text-stroke: 0;
     transition: ease .3s;
-    width: 80%;
 }
 
 #link-2:hover, #link-2:active {
@@ -526,38 +539,47 @@ footer {
     cursor: pointer;    
 }
 
+.hp-project-spacer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1000px;
+}
+
 /* HOMEPAGE--RESPONSIVE PROJECTS */
 
 @media (min-width: 915px) {
-    .hp-project-section{
-        display: block;
-    }
 
     #link-2 {
         display: block;
+        padding: 20px 20%;
     }
 
     .hp-project-spacer {
-        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 20px;
-        padding: 20px 10%;
+        padding: 0 auto;
         max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    #link-2 img {
-        max-height: 80vh;
     }
 
     #link-2:last-child .hp-project-spacer {
         flex-direction: row-reverse;
     }
 
+    #link-2:last-child {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
     #link-2:last-child #link-2-text {
-        text-align: right;
+        align-self: center;
+    }
+
+    #link-2 img {
+        max-height: 80vh;
     }
 }
 

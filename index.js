@@ -1,5 +1,3 @@
-// HOMEPAGE--ASTROLOGY QUESTION
-
 const yesButton = document.getElementById("yes");
 const noButton = document.getElementById("no");
 const astroAnswer = document.getElementById("astro-a");
