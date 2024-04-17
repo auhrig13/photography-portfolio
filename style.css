@@ -758,6 +758,44 @@ textarea {
     transition: ease .3s;
 }
 
+/* WORK PAGES--MODAL LIGHTBOX */
+
+.lightbox-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, .8);
+}
+
+.lightbox-slide {
+    position: relative;
+}
+
+.featured-image {
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+.close-button {
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #00FF60;
+  cursor: pointer;
+}
+
 /* WORK PAGES--RESPONSIVE */
 
 @media (min-width: 390px) {
@@ -783,15 +821,7 @@ textarea {
 
 }
 
-@media (min-width: 1080px) {
-    .work-hero-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding-right: 20%;
-    }
-    
+@media (min-width: 1080px) {    
     .work-img-grid {
         padding: 20px 20%;
     }
