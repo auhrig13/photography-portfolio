@@ -10,7 +10,6 @@ function openLightbox(ev) {
 }
 
 const closeButton = document.querySelector(".close-button")
-console.log(closeButton)
 
 closeButton.addEventListener("click", closeLightbox)
 

@@ -32,3 +32,12 @@ workDesktopButton.addEventListener("click", toggleDesktopWorkMenu);
 function toggleDesktopWorkMenu() {
     workDesktopMenu.classList.toggle("work-desktop-active");
 }
+
+document.addEventListener("click", hideAllMenus)
+
+function hideAllMenus(event) {
+  if (!event.target.matches(".work-button")) {
+    workMobileMenu.classList.remove("work-mobile-active");
+    workDesktopMenu.classList.remove("work-desktop-active");
+  }
+}
