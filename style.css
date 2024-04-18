@@ -782,13 +782,6 @@ textarea {
     max-height: 80vh;
 }
 
-.next-button {
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    cursor: pointer;
-}
-
 .close-button {
     color: white;
     position: absolute;
